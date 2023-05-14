@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% for (let i = 0; i < messages.length; i++) { %>
+    <li>
+      <h3><%= messages[i].user %></h3>
+      <h5><%= messages[i].text %></h5>
+    </li>
+    <% } %>
+    <a href="/new">Make a new post</a>
+  </body>
+</html>
